@@ -3,6 +3,9 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Add js-enabled class to body for animation handling
+    document.body.classList.add('js-enabled');
+
     // ----------------------------------------------------------------
     // 1. Sliding Mobile Menu Drawer Control
     // ----------------------------------------------------------------
@@ -27,23 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', openMobileMenu);
-    }
-
-    if (mobileMenuClose) {
-        mobileMenuClose.addEventListener('click', closeMobileMenu);
-    }
-
-    if (mobileMenuBackdrop) {
-        mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
-    }
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+    if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+    if (mobileMenuBackdrop) mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
 
     // ----------------------------------------------------------------
     // 2. High-Performance Intersection Observer Scroll Reveal
     // ----------------------------------------------------------------
     const animateOnScrollOptions = {
-        threshold: 0.15,
+        threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
 
@@ -60,9 +55,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, animateOnScrollOptions);
 
-    document.querySelectorAll('.animate-on-scroll').forEach(element => {
+    const elementsToAnimate = document.querySelectorAll('.animate-on-scroll, .slide-left, .slide-right');
+    elementsToAnimate.forEach(element => {
         animateObserver.observe(element);
     });
+
+    // Fallback: If elements are still hidden after 2 seconds, show them all
+    setTimeout(() => {
+        elementsToAnimate.forEach(el => el.classList.add('visible'));
+    }, 2000);
 
     // ----------------------------------------------------------------
     // 3. Navbar Sticky Glassmorphism scroll Transition
@@ -92,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const targetVal = parseInt(counter.getAttribute('data-target'), 10) || 0;
         let currentVal = 0;
-        const duration = 2000; // 2 seconds as requested
+        const duration = 2000;
         const steps = 60;
         const increment = targetVal / steps;
         const stepTime = duration / steps;

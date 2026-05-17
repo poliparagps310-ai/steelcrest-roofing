@@ -67,30 +67,48 @@ html {
     border-bottom: 2px solid #C0C8D4;
 }
 
-/* Scroll Animations */
+/* Scroll Animations - Robust Implementation */
 .animate-on-scroll {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* We hide them only if JS is active and adding the class */
+.js-enabled .animate-on-scroll:not(.visible) {
     opacity: 0;
     transform: translateY(30px);
-    transition: all 0.6s ease;
-    will-change: transform, opacity;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 /* Alternating Slide Animations */
 .slide-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.js-enabled .slide-left:not(.visible) {
     opacity: 0;
     transform: translateX(-50px);
-    transition: all 0.8s ease;
 }
 
 .slide-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.js-enabled .slide-right:not(.visible) {
     opacity: 0;
     transform: translateX(50px);
-    transition: all 0.8s ease;
 }
 
 .slide-left.visible, .slide-right.visible {
-    opacity: 1;
-    transform: translateX(0);
+    opacity: 1 !important;
+    transform: translateX(0) !important;
 }
 
 /* Staggered animation for service cards */
@@ -164,4 +182,9 @@ html {
     top: 0;
     font-size: 12px;
     color: #0B1F3A;
+}
+
+/* Heading letter spacing */
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.02em;
 }
