@@ -42,22 +42,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------------------
     // 2. High-Performance Intersection Observer Scroll Reveal
     // ----------------------------------------------------------------
-    const revealOptions = {
-        threshold: 0.1,
+    const animateOnScrollOptions = {
+        threshold: 0.15,
         rootMargin: '0px 0px -50px 0px'
     };
 
-    const revealObserver = new IntersectionObserver((entries) => {
+    const animateObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                revealObserver.unobserve(entry.target); // Reveal only once
+                entry.target.classList.add('visible');
+                // If it has counters inside, trigger them
+                const counters = entry.target.querySelectorAll('.counter');
+                counters.forEach(counter => triggerCounter(counter));
+                
+                animateObserver.unobserve(entry.target);
             }
         });
-    }, revealOptions);
+    }, animateOnScrollOptions);
 
-    document.querySelectorAll('.reveal').forEach(element => {
-        revealObserver.observe(element);
+    document.querySelectorAll('.animate-on-scroll').forEach(element => {
+        animateObserver.observe(element);
     });
 
     // ----------------------------------------------------------------
@@ -67,62 +71,49 @@ document.addEventListener('DOMContentLoaded', () => {
     function checkScroll() {
         if (navbar) {
             if (window.scrollY > 50) {
-                navbar.classList.add('bg-primary/95', 'shadow-md', 'backdrop-blur-md');
-                navbar.classList.remove('bg-primary');
+                navbar.classList.add('bg-[#0B1F3A]/95', 'backdrop-blur-[10px]', 'shadow-lg');
+                navbar.classList.remove('bg-primary/95', 'backdrop-blur-md');
             } else {
-                navbar.classList.add('bg-primary');
-                navbar.classList.remove('bg-primary/95', 'shadow-md', 'backdrop-blur-md');
+                navbar.classList.add('bg-primary/95', 'backdrop-blur-md');
+                navbar.classList.remove('bg-[#0B1F3A]/95', 'backdrop-blur-[10px]', 'shadow-lg');
             }
         }
     }
 
     window.addEventListener('scroll', checkScroll);
-    checkScroll(); // Trigger initial load check
+    checkScroll();
 
     // ----------------------------------------------------------------
-    // 4. Stats Counter Animation on Viewport Entry
+    // 4. Stats Counter Animation Logic
     // ----------------------------------------------------------------
-    const counterElements = document.querySelectorAll('.counter');
-    const counterObserverOptions = {
-        threshold: 0.3,
-        rootMargin: '0px'
-    };
+    function triggerCounter(counter) {
+        if (counter.classList.contains('counted')) return;
+        counter.classList.add('counted');
 
-    const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const counter = entry.target;
-                const targetVal = parseInt(counter.getAttribute('data-target'), 10) || 0;
-                let currentVal = 0;
-                const duration = 1200; // Animation duration in ms
-                const steps = 40;
-                const increment = targetVal / steps;
-                const stepTime = duration / steps;
+        const targetVal = parseInt(counter.getAttribute('data-target'), 10) || 0;
+        let currentVal = 0;
+        const duration = 2000; // 2 seconds as requested
+        const steps = 60;
+        const increment = targetVal / steps;
+        const stepTime = duration / steps;
 
-                const updateCount = () => {
-                    if (currentVal < targetVal) {
-                        currentVal += increment;
-                        let suffix = '';
-                        if (counter.innerText.includes('%')) suffix = '%';
-                        else if (counter.innerText.includes('+')) suffix = '+';
-                        
-                        counter.innerText = Math.ceil(currentVal) + suffix;
-                        setTimeout(updateCount, stepTime);
-                    } else {
-                        let suffix = '';
-                        if (counter.innerText.includes('%')) suffix = '%';
-                        else if (counter.innerText.includes('+')) suffix = '+';
-                        counter.innerText = targetVal + suffix;
-                    }
-                };
-
-                updateCount();
-                counterObserver.unobserve(counter);
+        const updateCount = () => {
+            if (currentVal < targetVal) {
+                currentVal += increment;
+                let suffix = '';
+                if (counter.innerText.includes('%')) suffix = '%';
+                else if (counter.innerText.includes('+')) suffix = '+';
+                
+                counter.innerText = Math.ceil(currentVal) + suffix;
+                setTimeout(updateCount, stepTime);
+            } else {
+                let suffix = '';
+                if (counter.innerText.includes('%')) suffix = '%';
+                else if (counter.innerText.includes('+')) suffix = '+';
+                counter.innerText = targetVal + suffix;
             }
-        });
-    }, counterObserverOptions);
+        };
 
-    counterElements.forEach(counter => {
-        counterObserver.observe(counter);
-    });
+        updateCount();
+    }
 });

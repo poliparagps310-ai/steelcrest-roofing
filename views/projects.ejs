@@ -1,27 +1,27 @@
 <%- include('partials/header') %>
 
 <!-- Hero Section -->
-<section class="relative h-[50vh] flex items-center justify-center overflow-hidden bg-primary">
+<section class="relative h-[50vh] flex items-center justify-center overflow-hidden bg-[#0B1F3A]">
     <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-primary/70 z-10 hero-overlay"></div>
-        <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBlFeJih2KcPgRUaiGKZdo-apaSI5_qC21TIFEcyTnqsKrnun6vqc9vnkhsLk51cSxy2SJMtfIZqAd5j9X1eVkfjj3qpqzFgVAYDEr1MkCrZYOHkA9sYxNtn10xBD0IADKB4DVUUObYbRuz3m2lq8dFnKtSZyDCcSx7YxcIKiFntGYkLtSSdm8VuDc5aCEG7RxRgZvJOOM7LJY5LNl4gr4mRV4nRIVVNaGfpORNBhlDpyPLObo4UZwobROvSiX1V_baxowjk5-xEoKg')"></div>
+        <div class="absolute inset-0 bg-[#0B1F3A]/70 z-10 hero-overlay"></div>
+        <div class="w-full h-full bg-cover bg-center parallax" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBlFeJih2KcPgRUaiGKZdo-apaSI5_qC21TIFEcyTnqsKrnun6vqc9vnkhsLk51cSxy2SJMtfIZqAd5j9X1eVkfjj3qpqzFgVAYDEr1MkCrZYOHkA9sYxNtn10xBD0IADKB4DVUUObYbRuz3m2lq8dFnKtSZyDCcSx7YxcIKiFntGYkLtSSdm8VuDc5aCEG7RxRgZvJOOM7LJY5LNl4gr4mRV4nRIVVNaGfpORNBhlDpyPLObo4UZwobROvSiX1V_baxowjk5-xEoKg')"></div>
     </div>
-    <div class="relative z-20 text-center px-margin-mobile max-w-4xl mx-auto reveal">
+    <div class="relative z-20 text-center px-margin-mobile max-w-4xl mx-auto animate-on-scroll">
         <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary mb-6">Our Work Speaks For Itself</h1>
-        <div class="w-24 h-1 bg-secondary-container mx-auto mb-8"></div>
+        <div class="w-24 h-px bg-secondary mx-auto mb-8"></div>
         <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto">Witness the precision and architectural integrity of our most prestigious roofing projects across Texas.</p>
     </div>
 </section>
 
 <!-- Filter Bar -->
-<section class="py-12 bg-surface border-b border-secondary-container/10">
+<section class="py-12 bg-surface border-b border-secondary/10">
     <div class="max-w-7xl mx-auto px-margin-desktop">
         <div class="flex flex-wrap gap-4 justify-center">
-            <button class="filter-btn filter-btn-active font-label-caps text-label-caps px-8 py-3 border border-secondary-container transition-all hover:bg-secondary-container hover:text-primary rounded-sm" data-filter="all">All</button>
-            <button class="filter-btn font-label-caps text-label-caps px-8 py-3 border border-secondary-container text-on-surface transition-all hover:bg-secondary-container hover:text-primary rounded-sm" data-filter="residential">Residential</button>
-            <button class="filter-btn font-label-caps text-label-caps px-8 py-3 border border-secondary-container text-on-surface transition-all hover:bg-secondary-container hover:text-primary rounded-sm" data-filter="commercial">Commercial</button>
-            <button class="filter-btn font-label-caps text-label-caps px-8 py-3 border border-secondary-container text-on-surface transition-all hover:bg-secondary-container hover:text-primary rounded-sm" data-filter="repair">Repair</button>
-            <button class="filter-btn font-label-caps text-label-caps px-8 py-3 border border-secondary-container text-on-surface transition-all hover:bg-secondary-container hover:text-primary rounded-sm" data-filter="emergency">Emergency</button>
+            <button class="filter-btn filter-btn-active font-label-caps text-label-caps px-8 py-3 border border-secondary transition-all hover:bg-secondary hover:text-[#0B1F3A] rounded-sm" data-filter="all">All</button>
+            <button class="filter-btn font-label-caps text-label-caps px-8 py-3 border border-secondary text-on-surface transition-all hover:bg-secondary hover:text-[#0B1F3A] rounded-sm" data-filter="residential">Residential</button>
+            <button class="filter-btn font-label-caps text-label-caps px-8 py-3 border border-secondary text-on-surface transition-all hover:bg-secondary hover:text-[#0B1F3A] rounded-sm" data-filter="commercial">Commercial</button>
+            <button class="filter-btn font-label-caps text-label-caps px-8 py-3 border border-secondary text-on-surface transition-all hover:bg-secondary hover:text-[#0B1F3A] rounded-sm" data-filter="repair">Repair</button>
+            <button class="filter-btn font-label-caps text-label-caps px-8 py-3 border border-secondary text-on-surface transition-all hover:bg-secondary hover:text-[#0B1F3A] rounded-sm" data-filter="emergency">Emergency</button>
         </div>
     </div>
 </section>
@@ -32,90 +32,90 @@
         <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             <!-- Project Card 1 -->
-            <div class="project-card relative overflow-hidden group h-[500px] bg-white shadow-md rounded-sm reveal" data-category="residential">
+            <div class="project-card relative overflow-hidden group h-[500px] bg-white shadow-md rounded-sm animate-on-scroll slide-left" data-category="residential">
                 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Beverly Hills Luxury residential zinc-clad custom roof installation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdiDrQ0rfa8ik52q3tAtaMos-sBXPXwtYf5SJZ-JZXe7fXxepeA4VAuXTkRNsqnnh46riE0Sa9Yj2FxXdus_WyaPQqehA4nMFOrttxGkxYFFpg3S6a3CzDeanpkQfKdi3QWnLgMIUUnQXPu02KL6PTWhsd9wezOQrhVgp3zreAmGwTrxJNhJWmzjrpPr-rpiEQ2Yt4Cr-HWH99AtkXDSfKc_AXbC6OuBzBQqJTxST3_bauDQaOQes0VIcJOCHjIF5kkxC4PHg_5f9t"/>
-                <div class="project-overlay absolute inset-0 bg-primary/95 p-8 flex flex-col justify-end translate-y-full transition-transform duration-500 ease-out">
-                    <span class="inline-block self-start font-label-caps text-label-caps bg-secondary-container text-primary px-3 py-1 mb-4">Residential</span>
+                <div class="project-overlay absolute inset-0 bg-[#0B1F3A]/95 p-8 flex flex-col justify-end translate-y-full transition-transform duration-500 ease-out">
+                    <span class="inline-block self-start font-label-caps text-label-caps bg-secondary text-[#0B1F3A] px-3 py-1 mb-4">Residential</span>
                     <h3 class="font-headline-md text-headline-md text-on-primary mb-2">The Glass Pavilion</h3>
                     <p class="font-body-md text-body-md text-on-primary-container mb-4">Westlake, TX</p>
-                    <hr class="border-secondary-container/30 mb-4"/>
+                    <hr class="border-secondary/30 mb-4"/>
                     <p class="font-body-md text-body-md text-on-primary mb-6">Custom zinc-clad roofing system integrated with seamless skylight arrays for a modern architectural masterpiece.</p>
-                    <a class="flex items-center gap-2 text-secondary-container font-button-text text-button-text group/btn" href="/contact">
+                    <a class="flex items-center gap-2 text-secondary font-button-text text-button-text group/btn" href="/contact">
                         View Details <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
                     </a>
                 </div>
             </div>
 
             <!-- Project Card 2 -->
-            <div class="project-card relative overflow-hidden group h-[500px] md:h-[600px] bg-white shadow-md rounded-sm lg:mt-12 reveal" data-category="commercial">
+            <div class="project-card relative overflow-hidden group h-[500px] md:h-[600px] bg-white shadow-md rounded-sm lg:mt-12 animate-on-scroll slide-right" data-category="commercial">
                 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Meridian Corporate Plaza premium commercial flat roofing with rooftop garden elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt_sWKqY_ZPybeLPqV7hAxbRLMysbAi4IECw0rI1h1PtEJoqCE4p_DkWMbLT9X4i3g9C0D62toYEj27sP8Qk96E1sMG7iV4IkNM6v-_3mmorMpRdUjP0g4vWw-3I6UTTXlBISyYA8EKJrpOqizbquPfguwiuoQ9qkIk6DlyWjE-PPckvuu5myIX6YWVWCZEDUeogyFwwKDkzyZZPblu8KIljTZ66zJkKpl54_NLQHcTxTiFDRm7h8bsxDBdqjkTClhwYGsIUdkeDr-"/>
-                <div class="project-overlay absolute inset-0 bg-primary/95 p-8 flex flex-col justify-end translate-y-full transition-transform duration-500 ease-out">
-                    <span class="inline-block self-start font-label-caps text-label-caps bg-secondary-container text-primary px-3 py-1 mb-4">Commercial</span>
+                <div class="project-overlay absolute inset-0 bg-[#0B1F3A]/95 p-8 flex flex-col justify-end translate-y-full transition-transform duration-500 ease-out">
+                    <span class="inline-block self-start font-label-caps text-label-caps bg-secondary text-[#0B1F3A] px-3 py-1 mb-4">Commercial</span>
                     <h3 class="font-headline-md text-headline-md text-on-primary mb-2">Meridian Corporate Plaza</h3>
                     <p class="font-body-md text-body-md text-on-primary-container mb-4">Dallas, TX</p>
-                    <hr class="border-secondary-container/30 mb-4"/>
+                    <hr class="border-secondary/30 mb-4"/>
                     <p class="font-body-md text-body-md text-on-primary mb-6">High-performance TPO membrane installation for a 50,000 sq ft office complex with advanced insulation technology.</p>
-                    <a class="flex items-center gap-2 text-secondary-container font-button-text text-button-text group/btn" href="/contact">
+                    <a class="flex items-center gap-2 text-secondary font-button-text text-button-text group/btn" href="/contact">
                         View Details <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
                     </a>
                 </div>
             </div>
 
             <!-- Project Card 3 -->
-            <div class="project-card relative overflow-hidden group h-[500px] bg-white shadow-md rounded-sm reveal" data-category="repair">
+            <div class="project-card relative overflow-hidden group h-[500px] bg-white shadow-md rounded-sm animate-on-scroll slide-left" data-category="repair">
                 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Historic Savannah Georgia estate meticulous clay tile restoration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe57mSyZt2dEiFf-82PZC7QsEolqYmqO3s-4_gVEYdsC8imwVhu_0-MaQAydroAwkhqkt3aZN15vRIFR3aLerv6COhqEstVgfh1M2p40fxck9l1cm08v3rfk_KcMBIv0F8UYBobV4COacuv933r4wuCj6NRjGmD5fdFKGv1UlTDlfvke2-YlN_vfhvlbNEicS3xbAbn5zFbMZOvwJy2p_SRN_n3VUHQBwbUATvabK9aBAdVmZ6augiykN--LCqOIPaKfWCWimnCsKQ"/>
-                <div class="project-overlay absolute inset-0 bg-primary/95 p-8 flex flex-col justify-end translate-y-full transition-transform duration-500 ease-out">
-                    <span class="inline-block self-start font-label-caps text-label-caps bg-secondary-container text-primary px-3 py-1 mb-4">Repair</span>
+                <div class="project-overlay absolute inset-0 bg-[#0B1F3A]/95 p-8 flex flex-col justify-end translate-y-full transition-transform duration-500 ease-out">
+                    <span class="inline-block self-start font-label-caps text-label-caps bg-secondary text-[#0B1F3A] px-3 py-1 mb-4">Repair</span>
                     <h3 class="font-headline-md text-headline-md text-on-primary mb-2">Heritage Estate Restoration</h3>
                     <p class="font-body-md text-body-md text-on-primary-container mb-4">Savannah, GA</p>
-                    <hr class="border-secondary-container/30 mb-4"/>
+                    <hr class="border-secondary/30 mb-4"/>
                     <p class="font-body-md text-body-md text-on-primary mb-6">Meticulous restoration of custom terracotta tiles and copper flashing on a National Historic Landmark.</p>
-                    <a class="flex items-center gap-2 text-secondary-container font-button-text text-button-text group/btn" href="/contact">
+                    <a class="flex items-center gap-2 text-secondary font-button-text text-button-text group/btn" href="/contact">
                         View Details <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
                     </a>
                 </div>
             </div>
 
             <!-- Project Card 4 -->
-            <div class="project-card relative overflow-hidden group h-[500px] bg-white shadow-md rounded-sm reveal" data-category="residential">
+            <div class="project-card relative overflow-hidden group h-[500px] bg-white shadow-md rounded-sm animate-on-scroll slide-right" data-category="residential">
                 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Aspen ridge cabin heavy standing seam metal dark roof installation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHO4AGz4GpVJoLfdZxhz6_3hSH3SYiyUiXGmK7HnzCvuTBsnjv94SGYWKpyRFKG4t8ynF3-O1t6PIFNWzL_-lHWut8j9LaNnMcyLG5fbNvQ9dpSTBXY1GwrMetqVeYjjqlqQiRWn_LVyC8WwLbzfnYhXLA2EO_9Tb6Esx_KyR7kLhMZP8KJjFc2SEHQAxhQPktHN9RlJh2eendjxsBY8P-O8oly0RKOC8nhLFphA8SOydTs7ci3LmU6xUs_r7LdCVgHRHW60OSDHm4"/>
-                <div class="project-overlay absolute inset-0 bg-primary/95 p-8 flex flex-col justify-end translate-y-full transition-transform duration-500 ease-out">
-                    <span class="inline-block self-start font-label-caps text-label-caps bg-secondary-container text-primary px-3 py-1 mb-4">Residential</span>
+                <div class="project-overlay absolute inset-0 bg-[#0B1F3A]/95 p-8 flex flex-col justify-end translate-y-full transition-transform duration-500 ease-out">
+                    <span class="inline-block self-start font-label-caps text-label-caps bg-secondary text-[#0B1F3A] px-3 py-1 mb-4">Residential</span>
                     <h3 class="font-headline-md text-headline-md text-on-primary mb-2">Aspen Ridge Cabin</h3>
                     <p class="font-body-md text-body-md text-on-primary-container mb-4">Aspen, CO</p>
-                    <hr class="border-secondary-container/30 mb-4"/>
+                    <hr class="border-secondary/30 mb-4"/>
                     <p class="font-body-md text-body-md text-on-primary mb-6">Heavy-gauge standing seam metal roof designed to withstand extreme alpine snow loads and temperature fluctuations.</p>
-                    <a class="flex items-center gap-2 text-secondary-container font-button-text text-button-text group/btn" href="/contact">
+                    <a class="flex items-center gap-2 text-secondary font-button-text text-button-text group/btn" href="/contact">
                         View Details <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
                     </a>
                 </div>
             </div>
 
             <!-- Project Card 5 -->
-            <div class="project-card relative overflow-hidden group h-[500px] md:h-[550px] bg-white shadow-md rounded-sm reveal" data-category="commercial">
+            <div class="project-card relative overflow-hidden group h-[500px] md:h-[550px] bg-white shadow-md rounded-sm animate-on-scroll slide-left" data-category="commercial">
                 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Logan commercial flat roof silver reflective installation warehouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChShTjSEjW6z-wMYZX3-MosFUTLWNL2V-qZ3-qsch6mWrqzeQ675yZ_-Y8w9cyBcEOniNVdVLfUIbg878RVli5WsTpOtw1A7wt4ubqCmiEqfWdmC0FyIYC6ovfW5K2XpI6QThkFXD8VIQgbKkM7fDgYf1b8Ih0-9ZL079Dxz07dOOpU5Ob2tbFBkeZSGhX_32IYk3XsVxWEm4XfCW-tSeubgDWOYZlTno1v17tFPqLEg2lk0aFCVOQaz4uqMfBBp-sEuBdfAYNfKwf"/>
-                <div class="project-overlay absolute inset-0 bg-primary/95 p-8 flex flex-col justify-end translate-y-full transition-transform duration-500 ease-out">
-                    <span class="inline-block self-start font-label-caps text-label-caps bg-secondary-container text-primary px-3 py-1 mb-4">Commercial</span>
+                <div class="project-overlay absolute inset-0 bg-[#0B1F3A]/95 p-8 flex flex-col justify-end translate-y-full transition-transform duration-500 ease-out">
+                    <span class="inline-block self-start font-label-caps text-label-caps bg-secondary text-[#0B1F3A] px-3 py-1 mb-4">Commercial</span>
                     <h3 class="font-headline-md text-headline-md text-on-primary mb-2">Logan Distribution Hub</h3>
                     <p class="font-body-md text-body-md text-on-primary-container mb-4">Chicago, IL</p>
-                    <hr class="border-secondary-container/30 mb-4"/>
+                    <hr class="border-secondary/30 mb-4"/>
                     <p class="font-body-md text-body-md text-on-primary mb-6">Installation of a cool-roof reflective system with solar panel mounting integration for sustainable energy production.</p>
-                    <a class="flex items-center gap-2 text-secondary-container font-button-text text-button-text group/btn" href="/contact">
+                    <a class="flex items-center gap-2 text-secondary font-button-text text-button-text group/btn" href="/contact">
                         View Details <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
                     </a>
                 </div>
             </div>
 
             <!-- Project Card 6 -->
-            <div class="project-card relative overflow-hidden group h-[500px] bg-white shadow-md rounded-sm lg:-mt-12 reveal" data-category="emergency">
+            <div class="project-card relative overflow-hidden group h-[500px] bg-white shadow-md rounded-sm lg:-mt-12 animate-on-scroll slide-right" data-category="emergency">
                 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Storm response emergency repair luxury estate wet roof protection work" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNyYY7_lSzebj5tkQj4PxRs5WZbd6cf6CK-eLlng9sU25Eu86a5j0AcbvN_crEdZ-VkVVYRoaRfWd8zvpwpqwZWK311yAeUT3OdmdZUh_oyksIp7o8_U7zaarFnysFix_uVLOaqDi5AX-vecvZwcqxVWK8A3FQvBkYBFdS2AMkzTnqFq-vImy1Xw1TO_sEuza_Pe-wsRNEdUiIV4cmCgxN9C4KqOcR7mExgp7a0AP7_vM1XCELN-5aVImcd_93M-5o8o9EIn5ivOty"/>
-                <div class="project-overlay absolute inset-0 bg-primary/95 p-8 flex flex-col justify-end translate-y-full transition-transform duration-500 ease-out">
-                    <span class="inline-block self-start font-label-caps text-label-caps bg-secondary-container text-primary px-3 py-1 mb-4">Emergency</span>
+                <div class="project-overlay absolute inset-0 bg-[#0B1F3A]/95 p-8 flex flex-col justify-end translate-y-full transition-transform duration-500 ease-out">
+                    <span class="inline-block self-start font-label-caps text-label-caps bg-secondary text-[#0B1F3A] px-3 py-1 mb-4">Emergency</span>
                     <h3 class="font-headline-md text-headline-md text-on-primary mb-2">Storm Response: Oak Creek</h3>
                     <p class="font-body-md text-body-md text-on-primary-container mb-4">Mobile, AL</p>
-                    <hr class="border-secondary-container/30 mb-4"/>
+                    <hr class="border-secondary/30 mb-4"/>
                     <p class="font-body-md text-body-md text-on-primary mb-6">Rapid deployment after Hurricane winds to secure and permanently repair a luxury multi-family complex.</p>
-                    <a class="flex items-center gap-2 text-secondary-container font-button-text text-button-text group/btn" href="/contact">
+                    <a class="flex items-center gap-2 text-secondary font-button-text text-button-text group/btn" href="/contact">
                         View Details <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
                     </a>
                 </div>
@@ -124,12 +124,12 @@
         </div>
 
         <!-- Project Call-To-Action -->
-        <div class="mt-section-gap text-center reveal">
+        <div class="mt-section-gap text-center animate-on-scroll">
             <span class="font-label-caps text-label-caps text-secondary mb-4 block">Ready to start your project?</span>
             <h2 class="font-headline-md text-headline-md text-primary mb-8">Let's Build Something Permanent.</h2>
             <div class="flex flex-col sm:flex-row gap-6 justify-center max-w-md mx-auto">
-                <a class="bg-primary text-on-primary border border-secondary-container font-button-text text-button-text px-10 py-5 rounded-sm hover:bg-primary-container hover:text-white text-center flex-1 shadow-md" href="/contact">Consult Our Architects</a>
-                <a class="transparent text-secondary border border-secondary font-button-text text-button-text px-10 py-5 rounded-sm hover:bg-secondary-container/10 text-center flex-1" href="/about">Our Capabilities</a>
+                <a class="bg-[#0B1F3A] text-on-primary border border-secondary font-button-text text-button-text px-10 py-5 rounded-sm hover:bg-secondary hover:text-[#0B1F3A] text-center flex-1 shadow-md transition-all duration-300" href="/contact">Consult Our Architects</a>
+                <a class="transparent text-secondary border border-secondary font-button-text text-button-text px-10 py-5 rounded-sm hover:bg-secondary/5 text-center flex-1 transition-all duration-300" href="/about">Our Capabilities</a>
             </div>
         </div>
     </div>

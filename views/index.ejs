@@ -1,37 +1,38 @@
 <%- include('partials/header') %>
 
 <!-- Hero Section -->
-<section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-primary">
-    <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-primary/65 z-10 hero-overlay"></div>
-        <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-fYx7tt2H6G7vycu0zeqdoSX7w41JbRV_M32YW5gBKATs3IucLpmOjP8Z8Fb1jMga51iuSJLPsTjc-zHmUQ3tN1h6DFFAjkeqQ1U6oY3h6aBDjhlhE2OankeYdUQMdTC8kjddexAhLMUvkYXZ_cvHOqAHhPzRnk0LdT6eq3DMeuyZFQytJlalGRN65X2WVF2Iwqe8_2KCz9KKfFmbHmMDxcVrwO2xKDZPV1VDg_mT2_bUkevMBOxf0xC2IihlBWSADhTBZ07ES1Fe')"></div>
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[#0B1F3A]">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+        <div class="absolute inset-0 bg-[#0B1F3A]/60 z-10 hero-overlay"></div>
+        <div class="w-full h-full bg-cover bg-center parallax hero-zoom" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-fYx7tt2H6G7vycu0zeqdoSX7w41JbRV_M32YW5gBKATs3IucLpmOjP8Z8Fb1jMga51iuSJLPsTjc-zHmUQ3tN1h6DFFAjkeqQ1U6oY3h6aBDjhlhE2OankeYdUQMdTC8kjddexAhLMUvkYXZ_cvHOqAHhPzRnk0LdT6eq3DMeuyZFQytJlalGRN65X2WVF2Iwqe8_2KCz9KKfFmbHmMDxcVrwO2xKDZPV1VDg_mT2_bUkevMBOxf0xC2IihlBWSADhTBZ07ES1Fe')"></div>
     </div>
     <div class="relative z-20 max-w-7xl mx-auto px-margin-desktop grid md:grid-cols-2 gap-12 items-center py-20">
-        <div class="reveal">
-            <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary mb-6">Austin's Most Trusted Roofing Experts</h1>
+        <div class="animate-on-scroll">
+            <div class="w-20 h-px bg-secondary mb-8"></div>
+            <h1 class="font-display-lg text-display-lg-mobile md:text-[72px] font-bold tracking-tight text-on-primary mb-6 [text-shadow:0_0_40px_rgba(192,200,212,0.3)]">Austin's Most Trusted Roofing Experts</h1>
             <p class="font-body-lg text-body-lg text-on-primary-container mb-10 max-w-xl">25+ Years of Excellence. Hundreds of Roofs. Zero Compromises. Austin's premier choice for architectural heritage and modern engineering.</p>
             <div class="flex flex-wrap gap-4">
-                <a class="bg-secondary-container border border-secondary-container text-primary font-button-text text-button-text px-10 py-4 hover:bg-transparent hover:text-secondary-container transition-all rounded-sm shadow-md" href="/contact">Get Free Inspection</a>
-                <a class="border border-secondary-container text-secondary-container font-button-text text-button-text px-10 py-4 hover:bg-secondary-container hover:text-primary transition-all rounded-sm" href="/projects">View Our Work</a>
+                <a class="bg-primary border border-secondary text-secondary font-button-text text-[16px] px-[36px] py-[16px] hover:bg-secondary hover:text-primary transition-all rounded-sm shadow-md" href="/contact">Get Free Inspection</a>
+                <a class="border border-secondary text-secondary font-button-text text-[16px] px-[36px] py-[16px] hover:bg-secondary hover:text-primary transition-all rounded-sm" href="/projects">View Our Work</a>
             </div>
         </div>
         
         <!-- Stats Widgets (Auto-linked to Intersection Observer counters) -->
-        <div class="grid grid-cols-2 gap-6 reveal">
-            <div class="p-8 bg-primary-container border-b-2 border-secondary-container glass-card premium-shadow rounded-sm text-center">
-                <div class="text-secondary-container font-display-lg text-headline-md mb-2 counter" data-target="500">0+</div>
+        <div class="grid grid-cols-2 gap-6 animate-on-scroll">
+            <div class="p-8 bg-primary-container border-b-2 border-secondary glass-card premium-shadow rounded-sm text-center">
+                <div class="text-secondary font-display-lg text-headline-md mb-2 counter" data-target="500">0+</div>
                 <div class="font-label-caps text-label-caps text-primary opacity-80">Projects Completed</div>
             </div>
-            <div class="p-8 bg-primary-container border-b-2 border-secondary-container glass-card premium-shadow rounded-sm text-center">
-                <div class="text-secondary-container font-display-lg text-headline-md mb-2 counter" data-target="25">0</div>
+            <div class="p-8 bg-primary-container border-b-2 border-secondary glass-card premium-shadow rounded-sm text-center">
+                <div class="text-secondary font-display-lg text-headline-md mb-2 counter" data-target="25">0</div>
                 <div class="font-label-caps text-label-caps text-primary opacity-80">Years Experience</div>
             </div>
-            <div class="p-8 bg-primary-container border-b-2 border-secondary-container glass-card premium-shadow rounded-sm text-center">
-                <div class="text-secondary-container font-display-lg text-headline-md mb-2 counter" data-target="100">0%</div>
+            <div class="p-8 bg-primary-container border-b-2 border-secondary glass-card premium-shadow rounded-sm text-center">
+                <div class="text-secondary font-display-lg text-headline-md mb-2 counter" data-target="100">0%</div>
                 <div class="font-label-caps text-label-caps text-primary opacity-80">Satisfaction Rate</div>
             </div>
-            <div class="p-8 bg-primary-container border-b-2 border-secondary-container glass-card premium-shadow rounded-sm text-center">
-                <div class="text-secondary-container font-display-lg text-headline-md mb-2 flex justify-center text-primary">
+            <div class="p-8 bg-primary-container border-b-2 border-secondary glass-card premium-shadow rounded-sm text-center">
+                <div class="text-secondary font-display-lg text-headline-md mb-2 flex justify-center text-primary">
                     <span class="material-symbols-outlined text-4xl text-secondary">verified</span>
                 </div>
                 <div class="font-label-caps text-label-caps text-primary opacity-80 mt-1">Licensed &amp; Insured</div>
@@ -41,22 +42,22 @@
 </section>
 
 <!-- Trust Badge Bar -->
-<div class="bg-primary-container py-8 border-y border-secondary-container/10">
+<div class="bg-primary-container py-8 border-y border-secondary/10">
     <div class="max-w-7xl mx-auto px-margin-desktop flex flex-wrap justify-center md:justify-between items-center gap-8 opacity-90">
         <div class="flex items-center gap-2 text-on-primary">
-            <span class="material-symbols-outlined text-secondary-container fill-icon">star</span>
+            <span class="material-symbols-outlined text-secondary fill-icon">star</span>
             <span class="font-label-caps text-label-caps text-on-primary">Google 5★ Rated</span>
         </div>
         <div class="flex items-center gap-2 text-on-primary">
-            <span class="material-symbols-outlined text-secondary-container">verified_user</span>
+            <span class="material-symbols-outlined text-secondary">verified_user</span>
             <span class="font-label-caps text-label-caps text-on-primary">BBB Accredited</span>
         </div>
         <div class="flex items-center gap-2 text-on-primary">
-            <span class="material-symbols-outlined text-secondary-container">security</span>
+            <span class="material-symbols-outlined text-secondary">security</span>
             <span class="font-label-caps text-label-caps text-on-primary">Licensed &amp; Insured</span>
         </div>
         <div class="flex items-center gap-2 text-on-primary">
-            <span class="material-symbols-outlined text-secondary-container">request_quote</span>
+            <span class="material-symbols-outlined text-secondary">request_quote</span>
             <span class="font-label-caps text-label-caps text-on-primary">Free Estimates</span>
         </div>
     </div>
@@ -64,14 +65,14 @@
 
 <!-- Services Overview Snapshot -->
 <section class="py-section-gap max-w-7xl mx-auto px-margin-desktop">
-    <div class="text-center mb-16 reveal">
+    <div class="text-center mb-16 animate-on-scroll">
         <span class="font-label-caps text-label-caps text-secondary mb-4 block">Our Expertise</span>
         <h2 class="font-headline-md text-headline-md text-primary">What We Do</h2>
     </div>
     <div class="grid md:grid-cols-4 gap-gutter">
         
         <!-- Card 1 -->
-        <div class="bg-white p-8 border-b-2 border-secondary-container shadow-[0px_4px_20px_rgba(11,31,58,0.05)] group hover:-translate-y-2 transition-all duration-300 rounded-sm reveal">
+        <div class="bg-white p-8 border-b-2 border-secondary shadow-[0px_4px_20px_rgba(11,31,58,0.05)] group hover:-translate-y-2 transition-all duration-300 rounded-sm animate-on-scroll">
             <span class="material-symbols-outlined text-primary text-4xl mb-6">home</span>
             <h3 class="font-headline-sm text-headline-sm mb-4">Residential</h3>
             <p class="font-body-md text-on-surface-variant mb-6">Custom luxury roofing solutions for your home, focusing on durability and aesthetic appeal.</p>
@@ -79,7 +80,7 @@
         </div>
         
         <!-- Card 2 -->
-        <div class="bg-white p-8 border-b-2 border-secondary-container shadow-[0px_4px_20px_rgba(11,31,58,0.05)] group hover:-translate-y-2 transition-all duration-300 rounded-sm reveal" style="transition-delay: 100ms;">
+        <div class="bg-white p-8 border-b-2 border-secondary shadow-[0px_4px_20px_rgba(11,31,58,0.05)] group hover:-translate-y-2 transition-all duration-300 rounded-sm animate-on-scroll stagger-item" style="--order: 1;">
             <span class="material-symbols-outlined text-primary text-4xl mb-6">apartment</span>
             <h3 class="font-headline-sm text-headline-sm mb-4">Commercial</h3>
             <p class="font-body-md text-on-surface-variant mb-6">High-performance roofing systems for large-scale facilities and industrial complexes.</p>
@@ -87,7 +88,7 @@
         </div>
         
         <!-- Card 3 -->
-        <div class="bg-white p-8 border-b-2 border-secondary-container shadow-[0px_4px_20px_rgba(11,31,58,0.05)] group hover:-translate-y-2 transition-all duration-300 rounded-sm reveal" style="transition-delay: 200ms;">
+        <div class="bg-white p-8 border-b-2 border-secondary shadow-[0px_4px_20px_rgba(11,31,58,0.05)] group hover:-translate-y-2 transition-all duration-300 rounded-sm animate-on-scroll stagger-item" style="--order: 2;">
             <span class="material-symbols-outlined text-primary text-4xl mb-6">build</span>
             <h3 class="font-headline-sm text-headline-sm mb-4">Roof Repair</h3>
             <p class="font-body-md text-on-surface-variant mb-6">Precision repairs for leaks, storm damage, and structural aging with rapid turnaround.</p>
@@ -95,7 +96,7 @@
         </div>
         
         <!-- Card 4 -->
-        <div class="bg-white p-8 border-b-2 border-secondary-container shadow-[0px_4px_20px_rgba(11,31,58,0.05)] group hover:-translate-y-2 transition-all duration-300 rounded-sm reveal" style="transition-delay: 300ms;">
+        <div class="bg-white p-8 border-b-2 border-secondary shadow-[0px_4px_20px_rgba(11,31,58,0.05)] group hover:-translate-y-2 transition-all duration-300 rounded-sm animate-on-scroll stagger-item" style="--order: 3;">
             <span class="material-symbols-outlined text-primary text-4xl mb-6">e911_emergency</span>
             <h3 class="font-headline-sm text-headline-sm mb-4">Emergency</h3>
             <p class="font-body-md text-on-surface-variant mb-6">24/7 rapid storm damage response and critical tarping/roofing containment across Austin.</p>
@@ -107,29 +108,29 @@
 <!-- Why Choose Us Section -->
 <section class="bg-primary text-on-primary py-section-gap">
     <div class="max-w-7xl mx-auto px-margin-desktop grid md:grid-cols-2 gap-16 items-center">
-        <div class="reveal">
+        <div class="animate-on-scroll">
             <h2 class="font-headline-md text-headline-md mb-8">Why SteelCrest is Austin's Preferred Choice</h2>
             <div class="grid grid-cols-2 gap-8">
                 <div>
-                    <div class="text-secondary-container font-display-lg text-headline-md mb-2">500+</div>
+                    <div class="text-secondary font-display-lg text-headline-md mb-2">500+</div>
                     <p class="font-label-caps text-label-caps opacity-60">Completed Projects</p>
                 </div>
                 <div>
-                    <div class="text-secondary-container font-display-lg text-headline-md mb-2">25+</div>
+                    <div class="text-secondary font-display-lg text-headline-md mb-2">25+</div>
                     <p class="font-label-caps text-label-caps opacity-60">Years in Business</p>
                 </div>
                 <div>
-                    <div class="text-secondary-container font-display-lg text-headline-md mb-2">48hr</div>
+                    <div class="text-secondary font-display-lg text-headline-md mb-2">48hr</div>
                     <p class="font-label-caps text-label-caps opacity-60">Guaranteed Response</p>
                 </div>
                 <div>
-                    <div class="text-secondary-container font-display-lg text-headline-md mb-2">10-Yr</div>
+                    <div class="text-secondary font-display-lg text-headline-md mb-2">10-Yr</div>
                     <p class="font-label-caps text-label-caps opacity-60">Warranty Guarantee</p>
                 </div>
             </div>
         </div>
-        <div class="relative reveal h-[400px]">
-            <div class="absolute inset-0 border-2 border-secondary-container -mt-6 -ml-6 z-0"></div>
+        <div class="relative animate-on-scroll h-[400px]">
+            <div class="absolute inset-0 border-2 border-secondary -mt-6 -ml-6 z-0"></div>
             <img class="w-full h-full object-cover relative z-10 shadow-lg rounded-sm" alt="Team of SteelCrest professional roofers in safety vest gear working on an Austin custom architectural roof" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZSAmcwedCVkzLuSU1cCj8vDHOAZQLZn3tAK31hMED0oXCYL2nXDMwAhQ3uZUv_z_6th_fOa7gW3-Px1dd1GVgvCaVYyJaOGSAGmtjkHOwEDZJ1dv8YoihE6pBWO1PjacNUwgAqyZFVRJ4ihPHuZ7IPdJ6ZCzWK7jONanpXHYXCxml9-AoKeSOkOt8Ldw3zcPqlNUb63MhUkP67iNbEEEg4g6z849jHKjU_HT9XTNOIjLaP0cQ1fWufrYK_AEiBwMnLVaZxLnoigsJ"/>
         </div>
     </div>
@@ -137,7 +138,7 @@
 
 <!-- The Streamlined Process -->
 <section class="py-section-gap bg-surface overflow-hidden">
-    <div class="max-w-7xl mx-auto px-margin-desktop text-center mb-20 reveal">
+    <div class="max-w-7xl mx-auto px-margin-desktop text-center mb-20 animate-on-scroll">
         <h2 class="font-headline-md text-headline-md text-primary">How It Works</h2>
         <p class="font-body-md text-on-surface-variant mt-4">A streamlined premium process from first call to final inspection.</p>
     </div>
@@ -148,8 +149,8 @@
         <div class="grid md:grid-cols-4 gap-gutter relative z-10">
             
             <!-- Step 1 -->
-            <div class="text-center group reveal">
-                <div class="w-24 h-24 bg-primary text-secondary-container rounded-full flex items-center justify-center mx-auto mb-8 border-4 border-surface group-hover:scale-110 transition-all duration-300">
+            <div class="text-center group animate-on-scroll">
+                <div class="w-24 h-24 bg-primary text-secondary rounded-full flex items-center justify-center mx-auto mb-8 border-4 border-surface group-hover:scale-110 transition-all duration-300">
                     <span class="font-display-lg text-headline-md">1</span>
                 </div>
                 <h4 class="font-headline-sm text-headline-sm mb-4">Inspection</h4>
@@ -157,8 +158,8 @@
             </div>
             
             <!-- Step 2 -->
-            <div class="text-center group reveal" style="transition-delay: 150ms;">
-                <div class="w-24 h-24 bg-primary text-secondary-container rounded-full flex items-center justify-center mx-auto mb-8 border-4 border-surface group-hover:scale-110 transition-all duration-300">
+            <div class="text-center group animate-on-scroll stagger-item" style="--order: 1;">
+                <div class="w-24 h-24 bg-primary text-secondary rounded-full flex items-center justify-center mx-auto mb-8 border-4 border-surface group-hover:scale-110 transition-all duration-300">
                     <span class="font-display-lg text-headline-md">2</span>
                 </div>
                 <h4 class="font-headline-sm text-headline-sm mb-4">Quote</h4>
@@ -166,8 +167,8 @@
             </div>
             
             <!-- Step 3 -->
-            <div class="text-center group reveal" style="transition-delay: 300ms;">
-                <div class="w-24 h-24 bg-primary text-secondary-container rounded-full flex items-center justify-center mx-auto mb-8 border-4 border-surface group-hover:scale-110 transition-all duration-300">
+            <div class="text-center group animate-on-scroll stagger-item" style="--order: 2;">
+                <div class="w-24 h-24 bg-primary text-secondary rounded-full flex items-center justify-center mx-auto mb-8 border-4 border-surface group-hover:scale-110 transition-all duration-300">
                     <span class="font-display-lg text-headline-md">3</span>
                 </div>
                 <h4 class="font-headline-sm text-headline-sm mb-4">Build</h4>
@@ -175,8 +176,8 @@
             </div>
             
             <!-- Step 4 -->
-            <div class="text-center group reveal" style="transition-delay: 450ms;">
-                <div class="w-24 h-24 bg-primary text-secondary-container rounded-full flex items-center justify-center mx-auto mb-8 border-4 border-surface group-hover:scale-110 transition-all duration-300">
+            <div class="text-center group animate-on-scroll stagger-item" style="--order: 3;">
+                <div class="w-24 h-24 bg-primary text-secondary rounded-full flex items-center justify-center mx-auto mb-8 border-4 border-surface group-hover:scale-110 transition-all duration-300">
                     <span class="font-display-lg text-headline-md">4</span>
                 </div>
                 <h4 class="font-headline-sm text-headline-sm mb-4">Done</h4>
@@ -188,7 +189,7 @@
 
 <!-- Recent Projects Preview -->
 <section class="py-section-gap max-w-7xl mx-auto px-margin-desktop">
-    <div class="flex justify-between items-end mb-16 reveal">
+    <div class="flex justify-between items-end mb-16 animate-on-scroll">
         <div>
             <h2 class="font-headline-md text-headline-md text-primary">Recent Projects</h2>
             <p class="font-body-md text-on-surface-variant mt-2">Premium Texas craftsmanship that speaks for itself.</p>
@@ -198,30 +199,30 @@
     <div class="grid md:grid-cols-3 gap-gutter">
         
         <!-- Project 1 -->
-        <div class="reveal group cursor-pointer" onclick="window.location.href='/projects'">
+        <div class="animate-on-scroll group cursor-pointer" onclick="window.location.href='/projects'">
             <div class="relative h-64 overflow-hidden mb-6 rounded-sm shadow-md">
                 <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Westlake Austin Luxury Shingle Roof Project" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0b5og2BfcT1H_EuDkaXhT9u1Sw6fTZp7NIi-4AMZticdP8kuWk-O1vX5oV-9blKhDzcdjJHKzFlgzNnoiinh81XotjoA3DhDKimajOxWikNTBL4nDjlfjs52xt8bUTjmyIROvfIbahpfQdiyN3C8iXO1bVzYx13pBRCdUvtoTSOPCAYpxMj-aRrGrCWznercgfzhI1DqB7jnTkoeKgb-VU6cKGW-Xj5LYpE2d_YWX2XshiSN0zFzLJh8gA-M5hLfGd2txjTJiXoyQ"/>
-                <div class="absolute top-4 right-4 bg-secondary-container text-primary px-3 py-1 font-label-caps text-[12px] shadow-sm rounded-sm">Luxury Shingle</div>
+                <div class="absolute top-4 right-4 bg-secondary text-primary px-3 py-1 font-label-caps text-[12px] shadow-sm rounded-sm">Luxury Shingle</div>
             </div>
             <h4 class="font-headline-sm text-headline-sm group-hover:text-secondary transition-colors">The Westlake Estate</h4>
             <p class="font-body-md text-on-surface-variant">Austin, TX • Complete Replacement</p>
         </div>
         
         <!-- Project 2 -->
-        <div class="reveal group cursor-pointer" onclick="window.location.href='/projects'" style="transition-delay: 100ms;">
+        <div class="animate-on-scroll group cursor-pointer stagger-item" onclick="window.location.href='/projects'" style="--order: 1;">
             <div class="relative h-64 overflow-hidden mb-6 rounded-sm shadow-md">
                 <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Domain Austin Standing Seam Metal Roof Installation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp3RF79pc2fUHcFg5gfGeFgXIxsLCvFH-jcssirOlww_RKXKTcUVejzLJ3Vp36bhmPgImUUEMN_t0gO-BnDdLGOA9wElb2MwX8Nl-vmur_VQ5qHcqGK3JsagfnfYIAIUO_QR8QwEWempM__ll7u5nTk1ZZBmJTdw-2lV1jOLLzeqwj8WWtuWaDco5RMmqRNSNio7ywlSuuX3XGv6girjXqKAh9DEC1eSsa8zOPA0wQLXBR2Hm2vQ4oSaat7gHjJVzpMTPG1zoPAN54"/>
-                <div class="absolute top-4 right-4 bg-secondary-container text-primary px-3 py-1 font-label-caps text-[12px] shadow-sm rounded-sm">Standing Seam Metal</div>
+                <div class="absolute top-4 right-4 bg-secondary text-primary px-3 py-1 font-label-caps text-[12px] shadow-sm rounded-sm">Standing Seam Metal</div>
             </div>
             <h4 class="font-headline-sm text-headline-sm group-hover:text-secondary transition-colors">Domain Commercial Hub</h4>
             <p class="font-body-md text-on-surface-variant">North Austin • Full System Installation</p>
         </div>
         
         <!-- Project 3 -->
-        <div class="reveal group cursor-pointer" onclick="window.location.href='/projects'" style="transition-delay: 200ms;">
+        <div class="animate-on-scroll group cursor-pointer stagger-item" onclick="window.location.href='/projects'" style="--order: 2;">
             <div class="relative h-64 overflow-hidden mb-6 rounded-sm shadow-md">
                 <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Zilker Park Austin Historic Clay Tile Restoration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKYWNPcYHDJ28lAypqLwzcOHMVlKCKwTMwOU8zyswCg9NN0L51WSYNEhNbJHE2woGthR2e905ML9H0qCljHm3SlIJOEdPiJ1KbR3fyQCIbav9w9Gz1qoqQdraIrPpbwmDKdJNdSaP_JIfBvmIq14friCzMhUA84YlZ_PB0KiWfrB7zUVFam_WaTwk8beUFFY42l67424_XhGFeK1Ugqm7FLtKAWf40TJD2FHh4CgnpGXPfDKpSy2EdRPSTc_9OQSi3tin30GNAjaWw"/>
-                <div class="absolute top-4 right-4 bg-secondary-container text-primary px-3 py-1 font-label-caps text-[12px] shadow-sm rounded-sm">Historic Tile</div>
+                <div class="absolute top-4 right-4 bg-secondary text-primary px-3 py-1 font-label-caps text-[12px] shadow-sm rounded-sm">Historic Tile</div>
             </div>
             <h4 class="font-headline-sm text-headline-sm group-hover:text-secondary transition-colors">Zilker Park Restoration</h4>
             <p class="font-body-md text-on-surface-variant">Austin, TX • Heritage Repair</p>
@@ -232,35 +233,35 @@
 <!-- Testimonials Section Snapshot -->
 <section class="py-section-gap bg-primary-container overflow-hidden text-on-primary">
     <div class="max-w-7xl mx-auto px-margin-desktop grid md:grid-cols-3 gap-16 items-center">
-        <div class="reveal">
+        <div class="animate-on-scroll">
             <h2 class="font-headline-md text-headline-md text-on-primary mb-6">Trusted by Austin Homeowners</h2>
             <div class="flex gap-1 mb-6">
-                <span class="material-symbols-outlined text-secondary-container fill-icon">star</span>
-                <span class="material-symbols-outlined text-secondary-container fill-icon">star</span>
-                <span class="material-symbols-outlined text-secondary-container fill-icon">star</span>
-                <span class="material-symbols-outlined text-secondary-container fill-icon">star</span>
-                <span class="material-symbols-outlined text-secondary-container fill-icon">star</span>
+                <span class="material-symbols-outlined text-secondary fill-icon">star</span>
+                <span class="material-symbols-outlined text-secondary fill-icon">star</span>
+                <span class="material-symbols-outlined text-secondary fill-icon">star</span>
+                <span class="material-symbols-outlined text-secondary fill-icon">star</span>
+                <span class="material-symbols-outlined text-secondary fill-icon">star</span>
             </div>
             <p class="font-body-md text-on-primary-container leading-relaxed">We take pride in our 5-star reputation. See why your neighbors choose SteelCrest Roofing.</p>
-            <a class="font-button-text text-button-text text-secondary-container hover:text-white border-b border-secondary-container hover:border-white transition-colors block mt-6 w-max" href="/testimonials">Read More Reviews</a>
+            <a class="font-button-text text-button-text text-secondary hover:text-white border-b border-secondary hover:border-white transition-colors block mt-6 w-max" href="/testimonials">Read More Reviews</a>
         </div>
         <div class="md:col-span-2 grid md:grid-cols-2 gap-8">
             
             <!-- Review 1 -->
-            <div class="bg-primary p-10 border-l-4 border-secondary-container rounded-sm shadow-md reveal">
+            <div class="bg-primary p-10 border-l-4 border-secondary rounded-sm shadow-md animate-on-scroll">
                 <p class="font-body-md text-on-primary italic mb-8">"SteelCrest handled our storm damage repair with incredible professionalism. From the initial inspection to the final cleanup, they were fast, clean, and the quality is unmatched."</p>
                 <div>
                     <div class="font-headline-sm text-on-primary text-lg">Sarah Jenkins</div>
-                    <div class="font-label-caps text-label-caps text-secondary-container">Lakeway, TX</div>
+                    <div class="font-label-caps text-label-caps text-secondary">Lakeway, TX</div>
                 </div>
             </div>
             
             <!-- Review 2 -->
-            <div class="bg-primary p-10 border-l-4 border-secondary-container rounded-sm shadow-md reveal" style="transition-delay: 200ms;">
+            <div class="bg-primary p-10 border-l-4 border-secondary rounded-sm shadow-md animate-on-scroll stagger-item" style="--order: 1;">
                 <p class="font-body-md text-on-primary italic mb-8">"The best roofing experience I've had in 30 years of homeownership. Their team is knowledgeable and the metal roof they installed has drastically lowered our cooling costs."</p>
                 <div>
                     <div class="font-headline-sm text-on-primary text-lg">Michael Chen</div>
-                    <div class="font-label-caps text-label-caps text-secondary-container">Tarrytown, TX</div>
+                    <div class="font-label-caps text-label-caps text-secondary">Tarrytown, TX</div>
                 </div>
             </div>
         </div>
@@ -270,16 +271,15 @@
 <!-- Final Dynamic CTA Banner -->
 <section class="py-24 bg-primary relative overflow-hidden">
     <div class="absolute inset-0 opacity-10">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-secondary-container via-transparent to-transparent"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-secondary via-transparent to-transparent"></div>
     </div>
-    <div class="max-w-4xl mx-auto px-margin-desktop text-center relative z-10 reveal">
+    <div class="max-w-4xl mx-auto px-margin-desktop text-center relative z-10 animate-on-scroll">
         <h2 class="font-display-lg text-headline-md md:text-display-lg text-on-primary mb-8">Ready for a New Roof?</h2>
         <p class="font-body-lg text-on-primary-container mb-12">Get your free, no-obligation inspection today and experience the SteelCrest difference.</p>
         <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <a class="bg-secondary-container text-primary font-button-text text-xl px-12 py-5 hover:bg-white transition-all rounded-sm shadow-lg w-full sm:w-auto text-center" href="tel:5125550191">Call (512) 555-0191</a>
-            <a class="border-2 border-secondary-container text-secondary-container font-button-text text-xl px-12 py-5 hover:bg-secondary-container hover:text-primary transition-all rounded-sm w-full sm:w-auto text-center" href="/contact">Book Inspection</a>
+            <a class="bg-primary border border-secondary text-secondary font-button-text text-xl px-12 py-5 hover:bg-secondary hover:text-primary transition-all rounded-sm shadow-lg w-full sm:w-auto text-center" href="tel:5125550191">Call (512) 555-0191</a>
+            <a class="border-2 border-secondary text-secondary font-button-text text-xl px-12 py-5 hover:bg-secondary hover:text-primary transition-all rounded-sm w-full sm:w-auto text-center" href="/contact">Book Inspection</a>
         </div>
     </div>
 </section>
-
 <%- include('partials/footer') %>

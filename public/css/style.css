@@ -1,6 +1,5 @@
 /* 
    SteelCrest Roofing - Global Design System Tokens & Style Overrides
-   Consolidated from page style blocks to enable optimal browser-level caching
 */
 
 html {
@@ -20,15 +19,15 @@ html {
 
 /* Custom Hero Layout & Colors */
 .hero-overlay {
-    background: linear-gradient(to bottom, rgba(0, 6, 21, 0.8), rgba(0, 6, 21, 0.95));
+    background: linear-gradient(to bottom, rgba(11, 31, 58, 0.7), rgba(11, 31, 58, 0.9));
 }
 
 .bg-midnight {
-    background-color: #000615;
+    background-color: #0B1F3A;
 }
 
 .dotted-line {
-    background-image: radial-gradient(circle, #fed65b 1px, transparent 1px);
+    background-image: radial-gradient(circle, #C0C8D4 1px, transparent 1px);
     background-size: 12px 12px;
     height: 2px;
 }
@@ -56,26 +55,113 @@ html {
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background: #fed65b;
+    background: #C0C8D4;
     opacity: 0.3;
 }
 
-.gold-border-accent {
-    border-bottom: 1px solid #fed65b;
+.silver-border-accent {
+    border-bottom: 1px solid #C0C8D4;
 }
 
-.gold-border-gradient {
-    border-bottom: 2px solid #fed65b;
+.silver-border-gradient {
+    border-bottom: 2px solid #C0C8D4;
 }
 
-/* Dynamic Micro-Animations */
-.reveal {
+/* Scroll Animations */
+.animate-on-scroll {
     opacity: 0;
     transform: translateY(30px);
-    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: all 0.6s ease;
+    will-change: transform, opacity;
 }
 
-.reveal.active {
+/* Alternating Slide Animations */
+.slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease;
+}
+
+.slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease;
+}
+
+.slide-left.visible, .slide-right.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
+}
+
+/* Staggered animation for service cards */
+.stagger-item {
+    transition-delay: calc(var(--order) * 0.1s);
+}
+
+/* Hero Zoom Animation */
+@keyframes heroZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+.hero-zoom {
+    animation: heroZoom 8s ease-in-out forwards;
+}
+
+/* Parallax Effect */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Pulsing Red Dot */
+@keyframes pulseRed {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+.pulsing-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ef4444;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulseRed 2s infinite;
+}
+
+/* Floating Label Styles */
+.form-group {
+    position: relative;
+}
+
+.floating-input {
+    border: none;
+    border-bottom: 1px solid #C0C8D4;
+    background-color: transparent;
+    padding: 20px 0 10px 0;
+    width: 100%;
+}
+
+.floating-input:focus {
+    outline: none;
+    border-bottom: 2px solid #C0C8D4;
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 20px;
+    transition: 0.2s ease all;
+    color: rgba(11, 31, 58, 0.6);
+}
+
+.floating-input:focus ~ .floating-label,
+.floating-input:not(:placeholder-shown) ~ .floating-label {
+    top: 0;
+    font-size: 12px;
+    color: #0B1F3A;
 }

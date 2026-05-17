@@ -7,7 +7,7 @@
     
     <!-- Dynamic GZIP Compression Meta & CDNs -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;700&family=Bebas+Neue&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;700&family=Oswald:wght@400;500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     
     <!-- Global CSS Overrides -->
     <link href="/css/style.css" rel="stylesheet"/>
@@ -20,26 +20,26 @@
           extend: {
             "colors": {
               "on-surface-variant": "#44474d",
-              "on-primary-container": "#7587a7",
+              "on-primary-container": "#C0C8D4",
               "surface-container-high": "#d9eaff",
               "on-primary-fixed-variant": "#364764",
               "tertiary": "#02070f",
-              "surface": "#f7f9ff",
-              "on-primary": "#ffffff",
-              "on-secondary-container": "#745c00",
+              "surface": "#ffffff",
+              "on-primary": "#C0C8D4",
+              "on-secondary-container": "#0B1F3A",
               "error-container": "#ffdad6",
-              "background": "#f7f9ff",
+              "background": "#ffffff",
               "primary-fixed-dim": "#b5c7ea",
               "on-tertiary-fixed": "#141c25",
-              "secondary": "#735c00",
+              "secondary": "#C0C8D4",
               "on-secondary-fixed": "#241a00",
               "on-error-container": "#93000a",
-              "surface-bright": "#f7f9ff",
+              "surface-bright": "#ffffff",
               "error": "#ba1a1a",
               "on-tertiary-container": "#7f8893",
               "outline-variant": "#c4c6ce",
               "on-secondary-fixed-variant": "#574500",
-              "on-background": "#0c1d2c",
+              "on-background": "#0B1F3A",
               "surface-dim": "#cbdcf1",
               "primary-fixed": "#d6e3ff",
               "inverse-on-surface": "#e9f1ff",
@@ -48,17 +48,17 @@
               "on-secondary": "#ffffff",
               "surface-container-highest": "#d3e4fa",
               "inverse-surface": "#223242",
-              "primary-container": "#0b1f3a",
+              "primary-container": "#0B1F3A",
               "surface-container-low": "#eef4ff",
-              "secondary-container": "#fed65b",
+              "secondary-container": "#C0C8D4",
               "surface-variant": "#d3e4fa",
               "on-error": "#ffffff",
               "surface-container-lowest": "#ffffff",
               "tertiary-fixed": "#dbe3ef",
-              "primary": "#000615",
+              "primary": "#0B1F3A",
               "tertiary-fixed-dim": "#bfc7d3",
               "outline": "#75777e",
-              "on-surface": "#0c1d2c",
+              "on-surface": "#0B1F3A",
               "surface-tint": "#4d5f7d",
               "tertiary-container": "#182029",
               "secondary-fixed-dim": "#e9c349",
@@ -81,22 +81,22 @@
               "gutter": "24px"
             },
             "fontFamily": {
-              "display-lg-mobile": ["Playfair Display"],
+              "display-lg-mobile": ["Cormorant Garamond"],
               "body-lg": ["DM Sans"],
-              "display-lg": ["Playfair Display"],
-              "headline-sm": ["Playfair Display"],
-              "headline-md": ["Playfair Display"],
+              "display-lg": ["Cormorant Garamond"],
+              "headline-sm": ["Cormorant Garamond"],
+              "headline-md": ["Cormorant Garamond"],
               "body-md": ["DM Sans"],
-              "button-text": ["Bebas Neue"],
-              "label-caps": ["Bebas Neue"]
+              "button-text": ["Oswald"],
+              "label-caps": ["Oswald"]
             },
             "fontSize": {
               "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
-              "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-              "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+              "body-lg": ["18px", {"lineHeight": "1.8", "fontWeight": "400"}],
+              "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
               "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
-              "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
-              "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+              "headline-md": ["42px", {"lineHeight": "1.3", "fontWeight": "600"}],
+              "body-md": ["16px", {"lineHeight": "1.8", "fontWeight": "400"}],
               "button-text": ["16px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "400"}],
               "label-caps": ["14px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "400"}]
             }
@@ -108,26 +108,26 @@
 <body class="bg-background text-on-background selection:bg-secondary-container/30">
 
     <!-- TopNavBar with dynamic transparency & glass transitions -->
-    <nav class="fixed top-0 w-full bg-primary/95 backdrop-blur-md z-50 shadow-md border-b border-secondary-container/10 transition-all duration-300 ease-in-out" id="navbar">
+    <nav class="fixed top-0 w-full bg-primary/95 backdrop-blur-md z-50 shadow-md border-b border-secondary-container/20 transition-all duration-300 ease-in-out" id="navbar">
         <div class="flex justify-between items-center max-w-7xl mx-auto px-margin-desktop py-4">
             
             <!-- Brand Logo and Name -->
             <a class="flex items-center gap-3 group" href="/">
                 <img alt="SteelCrest Roofing Logo" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="/images/logo.png"/>
-                <span class="font-headline-sm text-headline-sm text-on-primary tracking-wide">SteelCrest Roofing</span>
+                <span class="font-headline-sm text-[22px] font-bold text-on-primary tracking-wide">SteelCrest Roofing</span>
             </a>
             
             <!-- Desktop Navigation Links (with dynamic highlight check based on activePage variable) -->
             <div class="hidden md:flex gap-8 items-center">
-                <a class="font-button-text text-button-text <%= activePage === 'home' ? 'text-secondary-container font-bold border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-200" href="/">Home</a>
-                <a class="font-button-text text-button-text <%= activePage === 'services' ? 'text-secondary-container font-bold border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-200" href="/services">Services</a>
-                <a class="font-button-text text-button-text <%= activePage === 'about' ? 'text-secondary-container font-bold border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-200" href="/about">About Us</a>
-                <a class="font-button-text text-button-text <%= activePage === 'projects' ? 'text-secondary-container font-bold border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-200" href="/projects">Projects</a>
-                <a class="font-button-text text-button-text <%= activePage === 'testimonials' ? 'text-secondary-container font-bold border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-200" href="/testimonials">Testimonials</a>
-                <a class="font-button-text text-button-text <%= activePage === 'contact' ? 'text-secondary-container font-bold border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-200" href="/contact">Contact</a>
+                <a class="font-button-text text-button-text <%= activePage === 'home' ? 'text-secondary-container border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-300" href="/">Home</a>
+                <a class="font-button-text text-button-text <%= activePage === 'services' ? 'text-secondary-container border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-300" href="/services">Services</a>
+                <a class="font-button-text text-button-text <%= activePage === 'about' ? 'text-secondary-container border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-300" href="/about">About Us</a>
+                <a class="font-button-text text-button-text <%= activePage === 'projects' ? 'text-secondary-container border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-300" href="/projects">Projects</a>
+                <a class="font-button-text text-button-text <%= activePage === 'testimonials' ? 'text-secondary-container border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-300" href="/testimonials">Testimonials</a>
+                <a class="font-button-text text-button-text <%= activePage === 'contact' ? 'text-secondary-container border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-300" href="/contact">Contact</a>
                 
                 <!-- Premium Action Button -->
-                <a class="font-button-text text-button-text bg-secondary-container text-primary px-5 py-2.5 rounded-sm shadow-md hover:bg-white hover:text-primary transition-all duration-300" href="/contact">Get Free Quote</a>
+                <a class="font-button-text text-button-text bg-primary text-secondary-container border border-secondary-container px-9 py-4 shadow-md hover:bg-secondary-container hover:text-primary transition-all duration-300" href="/contact">Get Free Quote</a>
             </div>
             
             <!-- Mobile Toggle Hamburger Menu -->
