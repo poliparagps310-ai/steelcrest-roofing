@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title><%= title %> | SteelCrest Roofing</title>
+    
+    <!-- Dynamic GZIP Compression Meta & CDNs -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;700&family=Bebas+Neue&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Global CSS Overrides -->
+    <link href="/css/style.css" rel="stylesheet"/>
+    
+    <!-- Custom Tailwind Configurations Carrying Over Premium Color Tokens -->
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "on-surface-variant": "#44474d",
+              "on-primary-container": "#7587a7",
+              "surface-container-high": "#d9eaff",
+              "on-primary-fixed-variant": "#364764",
+              "tertiary": "#02070f",
+              "surface": "#f7f9ff",
+              "on-primary": "#ffffff",
+              "on-secondary-container": "#745c00",
+              "error-container": "#ffdad6",
+              "background": "#f7f9ff",
+              "primary-fixed-dim": "#b5c7ea",
+              "on-tertiary-fixed": "#141c25",
+              "secondary": "#735c00",
+              "on-secondary-fixed": "#241a00",
+              "on-error-container": "#93000a",
+              "surface-bright": "#f7f9ff",
+              "error": "#ba1a1a",
+              "on-tertiary-container": "#7f8893",
+              "outline-variant": "#c4c6ce",
+              "on-secondary-fixed-variant": "#574500",
+              "on-background": "#0c1d2c",
+              "surface-dim": "#cbdcf1",
+              "primary-fixed": "#d6e3ff",
+              "inverse-on-surface": "#e9f1ff",
+              "on-tertiary": "#ffffff",
+              "secondary-fixed": "#ffe088",
+              "on-secondary": "#ffffff",
+              "surface-container-highest": "#d3e4fa",
+              "inverse-surface": "#223242",
+              "primary-container": "#0b1f3a",
+              "surface-container-low": "#eef4ff",
+              "secondary-container": "#fed65b",
+              "surface-variant": "#d3e4fa",
+              "on-error": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed": "#dbe3ef",
+              "primary": "#000615",
+              "tertiary-fixed-dim": "#bfc7d3",
+              "outline": "#75777e",
+              "on-surface": "#0c1d2c",
+              "surface-tint": "#4d5f7d",
+              "tertiary-container": "#182029",
+              "secondary-fixed-dim": "#e9c349",
+              "surface-container": "#e3efff",
+              "on-tertiary-fixed-variant": "#3f4751",
+              "inverse-primary": "#b5c7ea",
+              "on-primary-fixed": "#071c36"
+            },
+            "borderRadius": {
+              "DEFAULT": "0.125rem",
+              "lg": "0.25rem",
+              "xl": "0.5rem",
+              "full": "0.75rem"
+            },
+            "spacing": {
+              "margin-mobile": "20px",
+              "section-gap": "120px",
+              "unit": "8px",
+              "margin-desktop": "80px",
+              "gutter": "24px"
+            },
+            "fontFamily": {
+              "display-lg-mobile": ["Playfair Display"],
+              "body-lg": ["DM Sans"],
+              "display-lg": ["Playfair Display"],
+              "headline-sm": ["Playfair Display"],
+              "headline-md": ["Playfair Display"],
+              "body-md": ["DM Sans"],
+              "button-text": ["Bebas Neue"],
+              "label-caps": ["Bebas Neue"]
+            },
+            "fontSize": {
+              "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+              "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+              "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+              "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+              "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+              "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+              "button-text": ["16px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "400"}],
+              "label-caps": ["14px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary-container/30">
+
+    <!-- TopNavBar with dynamic transparency & glass transitions -->
+    <nav class="fixed top-0 w-full bg-primary/95 backdrop-blur-md z-50 shadow-md border-b border-secondary-container/10 transition-all duration-300 ease-in-out" id="navbar">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-margin-desktop py-4">
+            
+            <!-- Brand Logo and Name -->
+            <a class="flex items-center gap-3 group" href="/">
+                <img alt="SteelCrest Roofing Logo" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="/images/logo.png"/>
+                <span class="font-headline-sm text-headline-sm text-on-primary tracking-wide">SteelCrest Roofing</span>
+            </a>
+            
+            <!-- Desktop Navigation Links (with dynamic highlight check based on activePage variable) -->
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="font-button-text text-button-text <%= activePage === 'home' ? 'text-secondary-container font-bold border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-200" href="/">Home</a>
+                <a class="font-button-text text-button-text <%= activePage === 'services' ? 'text-secondary-container font-bold border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-200" href="/services">Services</a>
+                <a class="font-button-text text-button-text <%= activePage === 'about' ? 'text-secondary-container font-bold border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-200" href="/about">About Us</a>
+                <a class="font-button-text text-button-text <%= activePage === 'projects' ? 'text-secondary-container font-bold border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-200" href="/projects">Projects</a>
+                <a class="font-button-text text-button-text <%= activePage === 'testimonials' ? 'text-secondary-container font-bold border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-200" href="/testimonials">Testimonials</a>
+                <a class="font-button-text text-button-text <%= activePage === 'contact' ? 'text-secondary-container font-bold border-b-2 border-secondary-container pb-1' : 'text-on-primary hover:text-secondary-container' %> transition-all duration-200" href="/contact">Contact</a>
+                
+                <!-- Premium Action Button -->
+                <a class="font-button-text text-button-text bg-secondary-container text-primary px-5 py-2.5 rounded-sm shadow-md hover:bg-white hover:text-primary transition-all duration-300" href="/contact">Get Free Quote</a>
+            </div>
+            
+            <!-- Mobile Toggle Hamburger Menu -->
+            <button class="md:hidden text-on-primary hover:text-secondary-container transition-colors p-2" id="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- sliding Premium Mobile Navigation Drawer -->
+    <div class="fixed inset-y-0 right-0 w-72 bg-primary z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out md:hidden border-l border-secondary-container/20" id="mobile-menu">
+        <div class="flex justify-between items-center p-6 border-b border-outline-variant/10">
+            <span class="font-headline-sm text-lg text-on-primary">Navigation</span>
+            <button class="text-on-primary hover:text-secondary-container transition-colors" id="mobile-menu-close" aria-label="Close Mobile Menu">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+        </div>
+        <div class="flex flex-col gap-5 p-8">
+            <a class="font-button-text text-lg <%= activePage === 'home' ? 'text-secondary-container font-bold' : 'text-on-primary hover:text-secondary-container' %> transition-colors" href="/">Home</a>
+            <a class="font-button-text text-lg <%= activePage === 'services' ? 'text-secondary-container font-bold' : 'text-on-primary hover:text-secondary-container' %> transition-colors" href="/services">Services</a>
+            <a class="font-button-text text-lg <%= activePage === 'about' ? 'text-secondary-container font-bold' : 'text-on-primary hover:text-secondary-container' %> transition-colors" href="/about">About Us</a>
+            <a class="font-button-text text-lg <%= activePage === 'projects' ? 'text-secondary-container font-bold' : 'text-on-primary hover:text-secondary-container' %> transition-colors" href="/projects">Projects</a>
+            <a class="font-button-text text-lg <%= activePage === 'testimonials' ? 'text-secondary-container font-bold' : 'text-on-primary hover:text-secondary-container' %> transition-colors" href="/testimonials">Testimonials</a>
+            <a class="font-button-text text-lg <%= activePage === 'contact' ? 'text-secondary-container font-bold' : 'text-on-primary hover:text-secondary-container' %> transition-colors" href="/contact">Contact</a>
+            
+            <a class="bg-secondary-container text-primary text-center font-button-text text-button-text py-3 shadow-md hover:bg-white transition-all mt-6 rounded-sm" href="/contact">Get Free Quote</a>
+        </div>
+    </div>
+    
+    <!-- Mobile Drawer Backdrop Overlay -->
+    <div class="fixed inset-0 bg-black/60 z-40 hidden transition-opacity duration-300" id="mobile-menu-backdrop"></div>

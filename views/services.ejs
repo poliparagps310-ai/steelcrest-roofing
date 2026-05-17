@@ -1,0 +1,313 @@
+<%- include('partials/header') %>
+
+<!-- Hero Header Section -->
+<section class="relative min-h-[60vh] flex items-center pt-24 bg-primary overflow-hidden">
+    <div class="absolute inset-0 opacity-40 z-0">
+        <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6Eyubx1YuaIH2IxXmK0InXwmqgwJ9EMd9y0fyqkXrMHQvARlGL57W6C37YPIo8yjmDJ15Cw62qxe7f-J6y9go8xHjevKQD6d-Ynxx2lg3b3SP9RcvTp--8HwNSzSRHSJQxLqT_O0S46qLU5KdBuxpMrzSWG6awnmCshLGDCT9xdpO79OXcR42HnSYeyjO9oSHz6AaXlXDAuqLsXoO-QVj0VNXp0U89vAkYboye5GPcxTd8s5LkjK--cY3sZ6GPKI3KCssIOJwxTNd')"></div>
+    </div>
+    <div class="hero-overlay absolute inset-0 z-10 bg-primary/60"></div>
+    <div class="relative z-20 max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop w-full py-section-gap">
+        <nav class="flex items-center gap-2 mb-6 text-on-primary-container font-label-caps text-label-caps">
+            <a class="hover:text-secondary-container transition-colors" href="/">Home</a>
+            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+            <span class="text-secondary-container">Our Services</span>
+        </nav>
+        <h1 class="font-display-lg text-display-lg text-on-primary mb-4 max-w-3xl leading-tight">Precision Engineered Roofing Services</h1>
+        <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mt-6">From high-end residential installations to complex commercial restorations, we deliver uncompromising protection through architectural mastery.</p>
+    </div>
+</section>
+
+<!-- Services Grid (Alternating Sections) -->
+<main class="py-section-gap space-y-section-gap">
+    
+    <!-- 1. Residential Roof Installation -->
+    <section class="reveal max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+        <div class="space-y-6 order-2 lg:order-1">
+            <div class="flex items-center gap-3 text-secondary">
+                <span class="material-symbols-outlined text-4xl">home_work</span>
+                <span class="font-label-caps text-label-caps tracking-[0.2em] uppercase">Residential Expertise</span>
+            </div>
+            <h2 class="font-headline-md text-headline-md text-primary">Residential Roof Installation</h2>
+            <p class="font-body-md text-on-surface-variant leading-relaxed">We specialize in premium residential roofing that combines aesthetic elegance with structural permanence. Our team works with elite materials including natural slate, cedar shake, and designer asphalt to ensure your estate is both protected and prestigious.</p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                <li class="flex items-start gap-2">
+                    <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                    <span class="font-body-md">Custom Estate Design</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                    <span class="font-body-md">High-Wind Resistance</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                    <span class="font-body-md">Architectural Shingles</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                    <span class="font-body-md">Lifetime Warranty</span>
+                </li>
+            </ul>
+            <div class="pt-4">
+                <a class="border-b border-secondary text-secondary font-button-text text-button-text py-2 hover:bg-secondary-container/10 transition-all uppercase tracking-widest inline-block" href="/contact?service=residential">Request This Service</a>
+            </div>
+        </div>
+        <div class="relative group order-1 lg:order-2">
+            <div class="absolute -inset-4 border-2 border-secondary-container/20 translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500 rounded-sm"></div>
+            <img class="w-full aspect-[4/3] object-cover shadow-xl rounded-sm" alt="Close-up of a perfectly installed high-end architectural shingle roof on a modern luxury home" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdSmXwkGMaIlbUPnRMzW5xRgIhTtyk3sxUt_ah7vUE6GT0wJvzwmfd8KVF9lVYDN1zls6kqohJH9dHZWZeahGPUi9GjYsTiwN44dIYGXQsrro7AuJbag1tPvecrM2X-QkeOr7YI4aodAMXMl6MOtUL98BFWlPeeLvtd_EEwRskA8mdTuFqXzBIKs9SNQORTCo0HGqfZ2zzGhzeEvnCkVbrAtofkOsdV4ngiRgczFHptjAbVGpzI7OdjIQM7DBNoJxwPnZMeeuhJoyK"/>
+        </div>
+    </section>
+    
+    <!-- 2. Commercial Roofing (Reversed) -->
+    <section class="reveal bg-surface-container-low py-24">
+        <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+            <div class="order-2 lg:order-1 relative group">
+                <div class="absolute -inset-4 border-2 border-secondary-container/20 -translate-x-4 translate-y-4 -z-10 group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform duration-500 rounded-sm"></div>
+                <img class="w-full aspect-[4/3] object-cover shadow-xl rounded-sm" alt="Aerial view of TPO white membrane roof and HVAC units of a modern commercial flat roof installation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9ONgXYV5sO6S5Qim_XyincNfFiDcDAtiGcQt4dnyePplcOzmcuMhrmmi6xIa77GZFV4SDXd-nLFaZFe1KZG_eFN5JC5yIuyiFSgAjPx3iMzGwz-vLXc0Zxg3JbgLv66sw20vL-FlT9BWiOz5gqaR43AYp_2tDVpe3ws9KXnKKBnY3AkeKGspJ-szfoQa36OGSnUDlj_LjkXU2DKJ-GqWOoNBViwmQFjD7opoxVHURwhQg3CePU7t6UHEIWZujTqYhQycDMPeYYsZh"/>
+            </div>
+            <div class="order-1 lg:order-2 space-y-6">
+                <div class="flex items-center gap-3 text-secondary">
+                    <span class="material-symbols-outlined text-4xl">domain</span>
+                    <span class="font-label-caps text-label-caps tracking-[0.2em] uppercase">Industrial Scale</span>
+                </div>
+                <h2 class="font-headline-md text-headline-md text-primary">Commercial Roofing Solutions</h2>
+                <p class="font-body-md text-on-surface-variant leading-relaxed">Providing robust industrial protection for large-scale facilities. We understand the critical nature of commercial continuity, offering high-performance flat roof systems and TPO solutions designed for longevity and energy efficiency.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <li class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                        <span class="font-body-md">TPO &amp; PVC Membranes</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                        <span class="font-body-md">Energy-Star Rated</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                        <span class="font-body-md">Minimal Business Impact</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                        <span class="font-body-md">Preventative Plans</span>
+                    </li>
+                </ul>
+                <div class="pt-4">
+                    <a class="border-b border-secondary text-secondary font-button-text text-button-text py-2 hover:bg-secondary-container/10 transition-all uppercase tracking-widest inline-block" href="/contact?service=commercial">Request This Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 3. Roof Repair & Restoration -->
+    <section class="reveal max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+        <div class="space-y-6 order-2 lg:order-1">
+            <div class="flex items-center gap-3 text-secondary">
+                <span class="material-symbols-outlined text-4xl">build</span>
+                <span class="font-label-caps text-label-caps tracking-[0.2em] uppercase">Meticulous Care</span>
+            </div>
+            <h2 class="font-headline-md text-headline-md text-primary">Roof Repair &amp; Restoration</h2>
+            <p class="font-body-md text-on-surface-variant leading-relaxed">Preserving the integrity of your existing structure through expert restoration. We address everything from minor leaks to comprehensive restoration of aging architectural components, extending the life of your investment.</p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                <li class="flex items-start gap-2">
+                    <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                    <span class="font-body-md">Leak Detection Pros</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                    <span class="font-body-md">Storm Damage Recovery</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                    <span class="font-body-md">Historical Restoration</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                    <span class="font-body-md">Seamless Matching</span>
+                </li>
+            </ul>
+            <div class="pt-4">
+                <a class="border-b border-secondary text-secondary font-button-text text-button-text py-2 hover:bg-secondary-container/10 transition-all uppercase tracking-widest inline-block" href="/contact?service=repair">Request This Service</a>
+            </div>
+        </div>
+        <div class="relative group order-1 lg:order-2">
+            <div class="absolute -inset-4 border-2 border-secondary-container/20 translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500 rounded-sm"></div>
+            <img class="w-full aspect-[4/3] object-cover shadow-xl rounded-sm" alt="Roofing professional in safety gear fixing copper flashing details on premium tiles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUgwFt59-Td2_MUSZQw4D3RcNd_i2mGaBOMnyyis8NF9ikGk5oOhokiVbiNbtGefLjfsaNMj88Nqi84iUa2nXW0cktzyRCGzXKkz1Cqz9XUpP7n94XmTxeAMqy0LCUFsAlQufmzfngdAguyh5qVL8k-H5eBWLJh9R8Kq2RhWD8ZVajSG_pnWsdEV1LFxV1O8U9nP10gNpSpkFuFTzDgKFJhIxypWzUaWg5g3vkv4RDbGy5hfovnzL15nJuOBeKSl1K2xbSvnlWLKO-"/>
+        </div>
+    </section>
+    
+    <!-- 4. Emergency Services (Highlighted) -->
+    <section class="reveal bg-primary py-24 text-on-primary overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-secondary-container/5 -skew-x-12 translate-x-1/2"></div>
+        <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center relative z-10">
+            <div class="order-2 lg:order-1">
+                <img class="w-full aspect-video lg:aspect-[4/3] object-cover border border-secondary-container/30 rounded-sm" alt="Emergency roofing crew securing a storm-damaged roof during a nighttime weather event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBx8ku9s56JFLR3vu5FcoMFiwUwuDG8dQEXIATqqGTVjuiF_oS355e8IxtUqT-RQn-ZCpwpv0n_QDe0aa0pcGAIs6nLE4WgBgfUTd85UpuK09zhWOOCegWzOjlf9URX3AlCMR5-ocequYUzOtQqj3fQcmvzMEAMhHHjA4n-rNkVf4v9Ho-V2kgTQ4QMbjzgiC2Zbc7e7_xFZZhLMXeQY3l5sLj_RXbmYDBwhrD-MVM_OkOXOw2xk0VhmSNGEz32HwqiLbC-aGmuy4w"/>
+            </div>
+            <div class="order-1 lg:order-2 space-y-6">
+                <div class="flex items-center gap-3 text-secondary-container">
+                    <span class="material-symbols-outlined text-4xl">emergency</span>
+                    <span class="font-label-caps text-label-caps tracking-[0.2em] uppercase">24/7 Availability</span>
+                </div>
+                <h2 class="font-headline-md text-headline-md">Emergency Roof Services</h2>
+                <p class="font-body-md text-on-primary-container leading-relaxed">When the unexpected occurs, our rapid response team is ready to mitigate damage and secure your property. We provide immediate tarping and stabilization to prevent secondary water intrusion during severe weather events.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <li class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                        <span class="font-body-md text-on-primary-container">1-Hour Response Time</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                        <span class="font-body-md text-on-primary-container">Temporary Tarping</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                        <span class="font-body-md text-on-primary-container">Insurance Liaison</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                        <span class="font-body-md text-on-primary-container">Disaster Mitigation</span>
+                    </li>
+                </ul>
+                <div class="pt-4">
+                    <a class="bg-secondary-container text-primary font-button-text text-button-text px-8 py-3 hover:bg-on-secondary-container hover:text-white transition-all uppercase inline-block rounded-sm" href="/contact?service=emergency">Urgent Request</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 5. Gutters & Drainage -->
+    <section class="reveal max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+        <div class="space-y-6 order-2 lg:order-1">
+            <div class="flex items-center gap-3 text-secondary">
+                <span class="material-symbols-outlined text-4xl">water_drop</span>
+                <span class="font-label-caps text-label-caps tracking-[0.2em] uppercase">Integrated Systems</span>
+            </div>
+            <h2 class="font-headline-md text-headline-md text-primary">Gutters &amp; Drainage</h2>
+            <p class="font-body-md text-on-surface-variant leading-relaxed">A roof is only as effective as its drainage system. We design and install seamless gutter solutions in aluminum, copper, and steel that complement your architecture while ensuring moisture is efficiently moved away from your foundation.</p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                <li class="flex items-start gap-2">
+                    <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                    <span class="font-body-md">Seamless Aluminum</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                    <span class="font-body-md">Bespoke Copper Detail</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                    <span class="font-body-md">Leaf Guard Protection</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                    <span class="font-body-md">Custom Miters</span>
+                </li>
+            </ul>
+            <div class="pt-4">
+                <a class="border-b border-secondary text-secondary font-button-text text-button-text py-2 hover:bg-secondary-container/10 transition-all uppercase tracking-widest inline-block" href="/contact?service=gutters">Request This Service</a>
+            </div>
+        </div>
+        <div class="relative group order-1 lg:order-2">
+            <img class="w-full aspect-[4/3] object-cover shadow-xl rounded-sm" alt="Detailed close-up shot of high-quality seamless copper gutters installed on traditional custom brick home" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAETCZJ-UJYNoWaB1WpfsP5Uq2fJj8pDrW277lCntYpT_xEmYhI7ZQ6DXzpjybb5TnoesGxsOLStUl5OWOPkmdRBA5VgBjdP8g2XmQzbXTtf8Zz0xEWXVZcctX9UAIpyj-kb_a6SvihCsG3RTIn2JMkqzzFbeWkGAcovzRJdNJWw2AWVqbM3g_szyjwCePzZL-Qlc6v2KX4ZVzdCz99p0jCP-Tvdoa3SrRhzXPU_YnHfNEWsw_3gVj11y5YZlZUX8VepU0lcg7-ioEw"/>
+        </div>
+    </section>
+    
+    <!-- 6. Roof Inspection & Maintenance -->
+    <section class="reveal bg-surface-container-high py-24">
+        <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+            <div class="order-2 lg:order-1">
+                <img class="w-full aspect-[4/3] object-cover shadow-xl rounded-sm" alt="Roofing safety inspector utilizing professional high-resolution drone camera for structural thermal analysis" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI44fkXV1g-BdU2_SQc7_F34DFn93M2_ViWdw_UhHUz-5ZTAI1CDG5-Qg3LxLUg4uhAI8YcoH3lKCqPKXQWn9SoKuJ57KK9PIiXJHGiAIK7aCvC4MuV4INW6fWr9Hh95oVMFRSXeoB050rFOLhzBeBmbDo1iKp0TNQd4n8WufNZSwCue4GTGVG_-WKt2L5DpxFXJ_nBKuTXjgHtrMzqd7YkRhNgkmvOVeMabrbjPbstUIxZxXqerPOjEZ_Rq73xRDSCpEofOHx7p2N"/>
+            </div>
+            <div class="order-1 lg:order-2 space-y-6">
+                <div class="flex items-center gap-3 text-secondary">
+                    <span class="material-symbols-outlined text-4xl">fact_check</span>
+                    <span class="font-label-caps text-label-caps tracking-[0.2em] uppercase">Asset Protection</span>
+                </div>
+                <h2 class="font-headline-md text-headline-md text-primary">Inspection &amp; Maintenance</h2>
+                <p class="font-body-md text-on-surface-variant leading-relaxed">Preventative care is the key to roof longevity. Our certified inspectors provide detailed forensic analysis of your roofing system, including drone thermal imaging, to identify potential failure points before they become costly liabilities.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <li class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                        <span class="font-body-md">Drone Thermal Surveys</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                        <span class="font-body-md">Annual Cleaning Plans</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                        <span class="font-body-md">Certification Reports</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-secondary-container mt-2"></span>
+                        <span class="font-body-md">Ventilation Audits</span>
+                    </li>
+                </ul>
+                <div class="pt-4">
+                    <a class="border-b border-secondary text-secondary font-button-text text-button-text py-2 hover:bg-secondary-container/10 transition-all uppercase tracking-widest inline-block" href="/contact?service=maintenance">Schedule Maintenance</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Materials Section (Bento/Grid Style) -->
+    <section class="reveal max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+        <div class="text-center mb-16 space-y-4">
+            <span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">The Foundation of Excellence</span>
+            <h2 class="font-display-lg text-headline-md lg:text-display-lg text-primary">Roofing Materials We Use</h2>
+            <div class="w-24 h-1 bg-secondary-container mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+            
+            <!-- Asphalt Card -->
+            <div class="glass-card p-8 premium-border-bottom group hover:-translate-y-2 transition-all duration-300 rounded-sm">
+                <div class="w-12 h-12 bg-primary flex items-center justify-center text-secondary-container mb-6 rounded-sm">
+                    <span class="material-symbols-outlined">layers</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm mb-4">Asphalt Shingles</h3>
+                <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">Premium architectural grade shingles offering versatile aesthetics and superior weather resistance.</p>
+                <div class="font-label-caps text-[12px] text-on-primary-container flex gap-2">
+                    <span class="bg-surface px-2 py-1 rounded-sm">VERSATILE</span>
+                    <span class="bg-surface px-2 py-1 rounded-sm">DURABLE</span>
+                </div>
+            </div>
+            
+            <!-- Metal Card -->
+            <div class="glass-card p-8 premium-border-bottom group hover:-translate-y-2 transition-all duration-300 rounded-sm">
+                <div class="w-12 h-12 bg-primary flex items-center justify-center text-secondary-container mb-6 rounded-sm">
+                    <span class="material-symbols-outlined">precision_manufacturing</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm mb-4">Metal Roofing</h3>
+                <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">Lifetime durability with modern standing-seam profiles and heat-reflective finishes.</p>
+                <div class="font-label-caps text-[12px] text-on-primary-container flex gap-2">
+                    <span class="bg-surface px-2 py-1 rounded-sm">ULTRA-LONG LIFE</span>
+                    <span class="bg-surface px-2 py-1 rounded-sm">MODERN</span>
+                </div>
+            </div>
+            
+            <!-- Tile Card -->
+            <div class="glass-card p-8 premium-border-bottom group hover:-translate-y-2 transition-all duration-300 rounded-sm">
+                <div class="w-12 h-12 bg-primary flex items-center justify-center text-secondary-container mb-6 rounded-sm">
+                    <span class="material-symbols-outlined">grid_view</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm mb-4">Tile &amp; Slate</h3>
+                <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">The ultimate in luxury and longevity, utilizing natural stone and kiln-fired clay materials.</p>
+                <div class="font-label-caps text-[12px] text-on-primary-container flex gap-2">
+                    <span class="bg-surface px-2 py-1 rounded-sm">PREMIUM</span>
+                    <span class="bg-surface px-2 py-1 rounded-sm">TIMELESS</span>
+                </div>
+            </div>
+            
+            <!-- TPO Card -->
+            <div class="glass-card p-8 premium-border-bottom group hover:-translate-y-2 transition-all duration-300 rounded-sm">
+                <div class="w-12 h-12 bg-primary flex items-center justify-center text-secondary-container mb-6 rounded-sm">
+                    <span class="material-symbols-outlined">view_quilt</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm mb-4">Flat / TPO</h3>
+                <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">Industrial-grade membranes engineered for superior UV resistance and puncture protection.</p>
+                <div class="font-label-caps text-[12px] text-on-primary-container flex gap-2">
+                    <span class="bg-surface px-2 py-1 rounded-sm">COMMERCIAL</span>
+                    <span class="bg-surface px-2 py-1 rounded-sm">COOL ROOF</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include('partials/footer') %>

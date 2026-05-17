@@ -1,0 +1,25 @@
+{
+  "name": "steelcrest-roofing",
+  "version": "1.0.0",
+  "description": "High-performance premium animated Node.js website for SteelCrest Roofing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "steelcrest",
+    "roofing",
+    "express",
+    "ejs",
+    "animated",
+    "optimized"
+  ],
+  "author": "Antigravity Pair Programmer",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2"
+  }
+}
