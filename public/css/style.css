@@ -19,15 +19,15 @@ html {
 
 /* Custom Hero Layout & Colors */
 .hero-overlay {
-    background: linear-gradient(to bottom, rgba(11, 31, 58, 0.7), rgba(11, 31, 58, 0.9));
+    background: linear-gradient(to bottom, rgba(23, 12, 121, 0.7), rgba(23, 12, 121, 0.9));
 }
 
 .bg-midnight {
-    background-color: #0B1F3A;
+    background-color: #170C79;
 }
 
 .dotted-line {
-    background-image: radial-gradient(circle, #C0C8D4 1px, transparent 1px);
+    background-image: radial-gradient(circle, #EFE3CA 1px, transparent 1px);
     background-size: 12px 12px;
     height: 2px;
 }
@@ -36,15 +36,15 @@ html {
 .glass-card {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(192, 200, 212, 0.3);
+    border: 1px solid rgba(239, 227, 202, 0.3);
 }
 
 .premium-shadow {
-    box-shadow: 0px 4px 20px rgba(11, 31, 58, 0.08);
+    box-shadow: 0px 4px 20px rgba(23, 12, 121, 0.08);
 }
 
 .video-overlay {
-    background: linear-gradient(0deg, rgba(11, 31, 58, 0.8) 0%, rgba(11, 31, 58, 0) 100%);
+    background: linear-gradient(0deg, rgba(23, 12, 121, 0.8) 0%, rgba(23, 12, 121, 0) 100%);
 }
 
 /* Timeline Components styling */
@@ -55,16 +55,16 @@ html {
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background: #C0C8D4;
+    background: #EFE3CA;
     opacity: 0.3;
 }
 
 .silver-border-accent {
-    border-bottom: 1px solid #C0C8D4;
+    border-bottom: 1px solid #EFE3CA;
 }
 
 .silver-border-gradient {
-    border-bottom: 2px solid #C0C8D4;
+    border-bottom: 2px solid #EFE3CA;
 }
 
 /* Scroll Animations - Robust Implementation */
@@ -157,7 +157,7 @@ html {
 
 .floating-input {
     border: none;
-    border-bottom: 1px solid #C0C8D4;
+    border-bottom: 1px solid #EFE3CA;
     background-color: transparent;
     padding: 20px 0 10px 0;
     width: 100%;
@@ -165,7 +165,7 @@ html {
 
 .floating-input:focus {
     outline: none;
-    border-bottom: 2px solid #C0C8D4;
+    border-bottom: 2px solid #EFE3CA;
 }
 
 .floating-label {
@@ -174,14 +174,14 @@ html {
     left: 0;
     top: 20px;
     transition: 0.2s ease all;
-    color: rgba(11, 31, 58, 0.6);
+    color: rgba(23, 12, 121, 0.6);
 }
 
 .floating-input:focus ~ .floating-label,
 .floating-input:not(:placeholder-shown) ~ .floating-label {
     top: 0;
     font-size: 12px;
-    color: #0B1F3A;
+    color: #170C79;
 }
 
 /* Heading letter spacing */
